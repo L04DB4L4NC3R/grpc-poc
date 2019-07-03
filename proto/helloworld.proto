@@ -1,0 +1,16 @@
+syntax = "proto3";
+package pb;
+
+service HelloService {
+	rpc SayHello (Hi) returns (Bye);
+}
+
+message Hi {
+	string id = 1;
+	string msg = 2;
+}
+
+message Bye {
+	string id = 1;
+	string msg = 2;
+}
